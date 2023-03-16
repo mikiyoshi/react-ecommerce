@@ -146,6 +146,17 @@ black: {
 
 <!-- ############################################## -->
 
+# Entention
+
+- ES7+ React/Redux/React-Native  
+  `dsznajder.es7-react-js-snippets`
+
+  React のスニペット(ショートカット)を使えるようにする
+  https://github.com/dsznajder/vscode-react-javascript-snippets/blob/HEAD/docs/Snippets.md
+
+- Pesticide for Chrome
+  レイアウトの確認ができる
+
 # Test at localhost
 
 ```
