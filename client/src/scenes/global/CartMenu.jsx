@@ -75,7 +75,7 @@ const CartMenu = () => {
                       width="123px"
                       height="164px"
                       // http://localhost:2000 は Strapi のロケーション ????? http://localhost:1337
-                      src={`http://localhost:2000${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
+                      src={`http://localhost:1337${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
                     />
                   </Box>
                   <Box flex="1 1 60%">

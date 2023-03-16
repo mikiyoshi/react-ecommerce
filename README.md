@@ -57,6 +57,7 @@ npx create-strapi-app@latest server
 All item updated at
 
 - server
+
   - src
     - api
       - item
@@ -69,6 +70,13 @@ All item updated at
         - controllers
         - routes
         - services
+
+- Settings
+  - Roles
+    - Public
+      - Item: find, findOne
+      - Order: create
+    - Save
 
 # React
 
@@ -156,6 +164,9 @@ black: {
 
 - Pesticide for Chrome
   レイアウトの確認ができる
+
+- Turbo Console Log / VS Code
+  Control ± Option ± L で選択してハイライトしたものを console.log('highlight:', highlight) とできる
 
 # Test at localhost
 
