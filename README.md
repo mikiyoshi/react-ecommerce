@@ -130,6 +130,47 @@ black: {
 },
 ```
 
+# Stripe
+
+[Stripe](https://dashboard.stripe.com/test/dashboard)
+
+- Stripe Login
+- Developers / light corner sub menu
+- API key
+
+  - Publishable key / put at client/src/scenes/Checkout.jsx
+    - stripePromise
+
+- New Terminal
+
+```
+cd client
+```
+
+```
+npm i @stripe/stripe-js
+```
+
+```
+cd server
+```
+
+```
+npm i stripe
+```
+
+- Stripe Login
+- Developers / light corner sub menu
+- API key
+
+  - Secret key / put at server/.env
+    - STRIPE_SECRET_KEY=
+  - Update server/src/api/order/controllers/order.js
+    [Stripe API / Create a Session](https://stripe.com/docs/api/checkout/sessions/create)
+    <!-- ここを確認すること -->
+    [Stripe Docs/ Prebuilt Checkout page](https://stripe.com/docs/checkout/quickstart)
+    <!-- これはシンプルなチェックアウトで不十分 -->
+
 <!-- "@emotion/react": "^11.10.4",
 "@emotion/styled": "^11.10.4",
 "@mui/icons-material": "^5.10.3",
@@ -184,3 +225,29 @@ npm start
 
 - http://localhost:5000
 - http://10.0.0.86:5000
+
+# Git commit fix
+
+[Commit を取り消したい](https://www.sejuku.net/blog/70611)
+
+```
+git add .
+```
+
+```
+git commit -m "wrong message"
+```
+
+```
+git reset --soft HEAD^
+```
+
+```
+git commit -m "fix message"
+```
+
+```
+git push origin master
+```
+
+- push の後は修正できない
